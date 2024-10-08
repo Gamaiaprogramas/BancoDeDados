@@ -2,29 +2,31 @@ body {
     font-family: Arial, sans-serif; /* Fonte do site */
     background-color: #f4f4f4; /* Cor de fundo */
     margin: 0; /* Remove margem padrão */
-    padding: 20px; /* Adiciona preenchimento */
+    padding: 5vh 2vw; /* Adiciona preenchimento responsivo em altura e largura */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
 }
 
 h1 {
     text-align: center; /* Centraliza o título */
     color: #333; /* Cor do texto do título */
+    font-size: 2.5vh; /* Tamanho do texto baseado na altura da viewport */
 }
 
 select, input, button {
-    padding: 10px; /* Preenchimento dos elementos */
-    margin: 5px; /* Margem entre os elementos */
+    padding: 2.5vh; /* Preenchimento dos elementos proporcional à altura da viewport */
+    margin: 1vh 0; /* Margem vertical */
     border-radius: 5px; /* Bordas arredondadas */
     border: 1px solid #ccc; /* Borda leve */
-    width: 100%; /* Largura total */
-    max-width: 400px; /* Largura máxima para não ficar muito largo */
+    width: 95vw; /* Largura de 95% da viewport */
+    max-width: 400px; /* Largura máxima de 400px */
+    font-size: 2.5vh; /* Tamanho da fonte baseado na altura da viewport */
 }
 
 button {
     background-color: #28a745; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    font-size: 1em; /* Tamanho da fonte do botão */
+    font-size: 2.5vh; /* Tamanho da fonte baseado na altura da viewport */
 }
 
 button:hover {
@@ -43,32 +45,32 @@ button:hover {
     flex-direction: column; /* Alinhar verticalmente */
     align-items: center; /* Centralizar horizontalmente */
     margin: 10px; /* Margem entre os blocos */
-    padding: 10px; /* Preenchimento interno */
+    padding: 15px; /* Preenchimento interno */
     background-color: #fff; /* Cor de fundo branca */
     border: 1px solid #ccc; /* Borda leve */
     border-radius: 8px; /* Bordas arredondadas */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
-    max-width: 30%; /* Limitar a largura dos blocos de aluno em porcentagem */
+    max-width: 90vw; /* Largura máxima baseada na viewport */
     height: auto; /* Altura automática para manter o conteúdo */
 }
 
 img {
-    max-width: 100%; /* Imagens ocupam toda a largura do bloco */
+    max-width: 50vw; /* Imagens ocupam 50% da largura da viewport */
     height: auto; /* Mantém a proporção da imagem */
-    margin-bottom: 5px; /* Espaço abaixo da imagem */
+    margin-bottom: 1vh; /* Espaço abaixo da imagem proporcional à altura */
 }
 
 .nome {
     font-weight: bold; /* Deixar o nome em negrito */
     color: #555; /* Cor do texto do nome */
     text-align: center; /* Centraliza o nome */
+    font-size: 2vh; /* Tamanho da fonte baseado na altura da viewport */
 }
 
 /* Media query para telas menores */
 @media (max-width: 600px) {
     select, input, button {
-        font-size: 1em; /* Ajusta o tamanho da fonte em telas menores */
-        width: 100%; /* Faz o elemento ocupar 100% da largura */
+        font-size: 2.5vh; /* Mantém o tamanho da fonte proporcional */
     }
 
     #resultado {
@@ -77,7 +79,11 @@ img {
     }
 
     .aluno-info {
-        max-width: 90%; /* Ajusta a largura máxima para dispositivos móveis */
+        max-width: 95vw; /* Ajusta a largura máxima para dispositivos móveis */
         height: auto; /* Garante que a altura se ajuste automaticamente */
+    }
+
+    img {
+        max-width: 75vw; /* Ajusta a largura da imagem em dispositivos móveis */
     }
 }
