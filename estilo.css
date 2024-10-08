@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif; /* Fonte do site */
-    background-color: #f4f4f4; /* Cor de fundo */
+    background-color: #f4f4f3; /* Cor de fundo */
     margin: 0; /* Remove margem padrão */
     padding: 5vh 2vw; /* Adiciona preenchimento responsivo em altura e largura */
     box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
