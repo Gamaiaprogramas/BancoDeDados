@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif; /* Fonte do site */
+    background-color: #f4f4f4; /* Cor de fundo */
+    margin: 0; /* Remove margem padrão */
+    padding: 20px; /* Adiciona preenchimento */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do texto do título */
+}
+
+select, input, button {
+    padding: 10px; /* Preenchimento dos elementos */
+    margin: 5px; /* Margem entre os elementos */
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #ccc; /* Borda leve */
+    width: calc(100% - 24px); /* Largura total menos o preenchimento */
+    max-width: 400px; /* Largura máxima para não ficar muito largo */
+}
+
+button {
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+button:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+#resultado {
+    display: flex; /* Usar flexbox para organizar as imagens e nomes */
+    flex-wrap: wrap; /* Permitir quebra de linha */
+    justify-content: center; /* Centraliza os itens */
+    margin-top: 20px; /* Espaço acima do resultado */
+}
+
+.aluno-info {
+    display: flex; /* Usar flexbox para alinhar a imagem e o nome */
+    flex-direction: column; /* Alinhar verticalmente */
+    align-items: center; /* Centralizar horizontalmente */
+    margin: 10px; /* Margem entre os blocos */
+    padding: 10px; /* Preenchimento interno */
+    background-color: #fff; /* Cor de fundo branca */
+    border: 1px solid #ccc; /* Borda leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+img {
+    max-width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+    margin-bottom: 5px; /* Espaço abaixo da imagem */
+}
+
+.nome {
+    font-weight: bold; /* Deixar o nome em negrito */
+    color: #555; /* Cor do texto do nome */
+}
